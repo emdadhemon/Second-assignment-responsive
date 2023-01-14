@@ -238,6 +238,7 @@ header{
     width: 85%;
     margin: auto;
     text-align: center;
+    margin-bottom: 150px;
 }
 .sponsor-title{
     color: #131313;
@@ -250,12 +251,11 @@ header{
     color: #727272;
     font-weight: 400;
     font-size: 16px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 .sponsor-icon{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 130px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 .sponsor-icon img{
     width: 166.76px;
