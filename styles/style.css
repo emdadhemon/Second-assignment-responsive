@@ -17,6 +17,18 @@ header{
     text-align: center;
     width: 100%;
 }
+.primary-btn{
+    padding: 21px 25px;
+    border: none;
+    background: #FF900E;
+    border-radius: 8px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+}
+.primary-btn:hover{
+    background-color: rgb(34, 22, 8);
+}
 
 /* nav bar */
 
@@ -39,11 +51,15 @@ header{
 }
 .nav-bar ul li{
     list-style: none;
+    margin-left: 60px;
+}
+.nav-bar ul li a{
     font-weight: 500;
     font-size: 18px;
-    margin-left: 60px;
     color: #424242;
-
+}
+.nav-bar ul li a:hover{
+    color: rgb(255, 187, 0);
 }
 
 /* Banner */
@@ -63,18 +79,9 @@ header{
     color: #727272;
     margin-bottom: 32px;
 }
-.banner-btn{
-    padding: 21px 25px;
-    border: none;
-    background: #FF900E;
-    border-radius: 8px;
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 20px;
-    margin-bottom: 50px;
-}
 .banner img{
     width: 90%;
+    margin-top: 50px ;
 }
 
 /* banner-2 */
@@ -121,28 +128,20 @@ header{
     font-size: 16px;
     margin-bottom: 32px;
 }
-.banner2-btn{
-    padding: 21px 25px;
-    border: none;
-    background: #FF900E;
-    border-radius: 8px;
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 20px;
-}
 
-/* banner-3 */
+/* banner-3 styles */
 
 .banner-3{
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    gap: 80px;
+    gap: 50px;
 }
 .banner3-title{
     font-weight: 700;
     font-size: 45px;
     padding-left: 26px;
-    border-left: 2px solid #FF900E;
+    border-left: 4px solid #FF900E;
     margin-bottom: 24px;
 }
 .banner3-desc{
@@ -169,10 +168,13 @@ header{
     font-weight: 400;
     font-size: 16px;
 }
-
+.banner3-img{
+    width: 800px;
+    height: 1059px;
+}
 .banner3-img img{
     width: 708px;
-    height: 982px;
+    height: 982px
 }
 .banner3-btn{
     padding: 20px 25px;
@@ -183,7 +185,10 @@ header{
     border-radius: 8px;
     border: none;
     position: relative;
-    bottom: 120px;
+    bottom: 100px;
+    display: inline-block;
+    text-align: center;
+    line-height: 80%;
 }
 .btn-text{
     font-weight: 500;
@@ -214,8 +219,7 @@ header{
     margin-bottom: 180px;
 }
 .achivements a:hover{
-    background-color: rgb(198, 198, 235);
-    color: white;
+    background-color: #f1a854;
 }
 .achivement{
     border: 1px solid #FF900E;
@@ -233,7 +237,11 @@ header{
 }
 
 
-/* sponsor */
+/* ---------------------
+    sponspor styles
+------------------------*/
+
+
 .sponsors{
     width: 85%;
     margin: auto;
@@ -262,10 +270,56 @@ header{
     height: 50px;
 }
 
-/* footer */
-.footer{
-    margin-bottom: 130px;
+/* bonus section styles */
+
+.bonus-section{
+    width: 80%;
+    margin: auto;
     text-align: center;
+    background: #6e6a64;
+    padding: 60px 0px;
+    margin-bottom: 80px;
+}
+.bonus-title{
+    color: #ffffff;
+	font-size: 40px;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+.bonus-desc{
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+.input1{
+    padding: 17px;
+	width: 250px;
+    font-size: 18px;
+    border: none;
+}
+.input2{
+    padding: 17px;
+	width: 300px;
+    font-size: 18px;
+    border: none;
+}
+.input3{
+    padding: 16px;
+	width: 150px;
+	background-color: #FF900E;
+	color: white;
+    border: 2px solid #FF900E;
+    font-size: 18px;
+}
+
+/* footer styles */
+
+.footer{
+    padding-bottom: 100px;
+    text-align: center;
+    margin: auto;
+
 }
 .footer p{
     font-weight: 400;
@@ -275,4 +329,58 @@ header{
     display: inline-block;
     padding: 30px 350px;
     border-radius: 8px;
+}
+
+
+
+/* responsive styles */
+
+@media only screen and (max-width:576px) {
+    .nav-bar ul {
+        flex-direction: column;
+    }
+    .features{
+        width: 100%;
+        margin-left: 20px;
+    }
+    .banner-2 {
+        flex-direction: column-reverse;
+    }
+    .banner2-img{
+        grid-template-columns: repeat(1, 1fr);
+        padding-right:20px;
+    }
+    .banner-3{
+        width: 90%;
+        flex-direction: column;
+    }
+    .banner3-img{
+        width: 100%;
+        margin-left: 8px;
+
+    }
+    .banner3-img img{
+        width: 100%;
+    }
+    .achivements{
+        flex-direction: column;
+    }
+    .sponsor-icon{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+    }
+    .bonus-section{
+        text-align: left;
+        padding-left: 8px;
+    }
+    .input1, .input2 {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .footer p{
+        width: 80%;
+        padding: 10px 20px;
+    }
+
+
 }
