@@ -346,10 +346,11 @@ header{
         margin-bottom: 15px;
     }
     .features{
-        width: 100%;
+        width: 90%;
         padding-left: 10px;
     }
     .banner-2 {
+        width: 100%;
         flex-direction: column-reverse;
     }
     .banner2-img{
